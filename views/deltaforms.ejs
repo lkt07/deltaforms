@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Delta_FormsApp </title>
+<link rel="stylesheet" type="text/css" href="/assets/stylesheet.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/assets/myownjs3.js"></script>
+
+</head>
+<body>
+
+
+
+
+     <div class="wrapper2">
+         <div class="modal">
+             <div class="modal-top">
+ <h2> Delta Forms</h2>
+
+               <h3><%=title%></h3>
+               <p><b>Description:</b> <%=description%></p>
+
+<form method="POST" id="formsubmission">
+          <div class="seperator2" id="questions">
+
+ <% for(var i=0;i<lengthofselect;i++){ %>
+   <div id="querytext">
+   <p class="access"><%= formq[i] %></p></div>
+   <input type="<%=typeq[i]%>" name="textform" required ></br></br></br>
+   <%} %>
+
+</div>
+
+
+         <button type="submit" class="anotherform button">Submit</button><br>
+         <div id="results2" ></div>
+
+
+</form>
+
+
+
+           </div>
+
+
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>

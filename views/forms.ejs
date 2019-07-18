@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Delta_FormsApp </title>
+<link rel="stylesheet" type="text/css" href="/assets/stylesheet.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/assets/myownjs.js"></script>
+<script type="text/javascript" src="/assets/myownjs2.js"></script>
+
+</head>
+<body>
+
+  <div class="topnav">
+  <a href="welcome">Delta Forms</a>
+  <a class="active" href="forms">Forms</a>
+  </div>
+
+
+     <div class="wrapper2">
+         <div class="modal">
+             <div class="modal-top">
+ <h2> Delta Forms</h2>
+<form id="ajax-contact" method="POST">
+               <div class="seperator">
+               <input type="text" class="text-line1" id="titlebar" name="formname" placeholder="Untitled Form"  required/>
+               <input type="text" class="text-line2" id="description" name="description" placeholder="Add Description" required/>
+             </div>
+
+             <div class="seperator" id="disappear">
+
+             <input type="number" id="nofields" value=1 required />
+             <button type="submit" class="addfield" onclick="add()">Add Field</button>
+
+              </div>
+
+
+          <div class="seperator2" id="questions"></div>
+
+
+         <button type="submit" class="submitform button" id="firstsub">Create</button>
+         <div id="results" ></div>
+
+</form>
+
+
+
+           </div>
+
+
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>

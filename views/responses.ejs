@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Delta_FormsApp </title>
+<link rel="stylesheet" type="text/css" href="/assets/stylesheet.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+</head>
+<body>
+
+
+
+
+     <div class="wrapper2">
+         <div class="modal">
+             <div class="modal-top">
+ <h2> Responses</h2>
+
+               <h3><%=title%></h3>
+
+
+
+          <div class="seperator2" id="questions">
+<h1> Form Questions<h1>
+  <% for(var i=0;i<length;i++){ %>
+  <div id="querytext">
+  <p class="access"><%= user[0].responsetext[i] %></p></div>
+  <%} %>
+
+</div>
+
+<div class="seperator2" id="questions">
+<h1> Form Results<h1>
+  <% for(var i=0;i<length;i++){ %>
+  <div id="querytext">
+  <p class="access"><%= resultsofuser[i] %></p></div>
+  <%} %>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+           </div>
+
+
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
